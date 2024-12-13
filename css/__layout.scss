@@ -1,0 +1,120 @@
+    body {
+        @include bodyStyles;
+    }
+
+    header {
+        .barlogo {
+
+            h1 {
+                @include transition25s;
+
+                &:hover {
+                    @include barLogoHover;
+                }
+            }
+        }
+    }
+
+    .info-main {
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+
+        &__oferta {
+            @include infoMainOferta;
+
+            &--info {
+                @include ofertaInfo;
+            }
+
+            &--desc {
+                @include ofertaDesc;
+            }
+        }
+
+    }
+
+    .info-second {
+        @include infoSecond;
+
+        &__info {
+            @include infoSecondInfo;
+
+            h2 {
+                @include infoSecondTitle;
+            }
+
+            p {
+                @include infoSecondP;
+            }
+        }
+
+    }
+
+    .info-movies {
+        @include infoMovies;
+
+        &__moviesSeriesFree {
+            h2 {
+                @include moviesSeriesFreeTitle;
+            }
+
+            p {
+                @include moviesSeriesFreeP;
+
+            }
+        }
+
+
+    }
+
+    .info-share {
+        @include infoShare;
+
+        &__info {
+
+            &--shareText {
+                @include infoShareText;
+            }
+
+            p {
+                @include infoShareP;
+            }
+        }
+
+
+
+        &__offer {
+            &--priceText {
+                @include infoSharePriceText;
+            }
+
+        }
+
+
+    }
+
+    .info-more {
+        @include infoMore;
+
+        &__info {
+
+            &--offer {
+                @include infoMoreOffer;
+            }
+
+        }
+    }
+
+    .legal {
+        @include legal;
+
+        &__info {
+            @include legalInfo;
+
+            &--content {
+                @include legalInfoContent;
+            }
+
+
+        }
+    }

@@ -1,0 +1,112 @@
+header {
+    .barlogo {
+        @include barLogo;
+
+        .logo-rojo {
+
+            @include logoRojo;
+
+            &:hover {
+                @include barLogoHover;
+            }
+        }
+    }
+}
+
+.info-main {
+    &__captureService {
+        @include infoMainCaptureService;
+
+        &--capturaGral {
+            @include infoMainCapturaGral;
+        }
+    }
+
+    &__buttons {
+        @include infoMainButtons;
+
+        &--putEmail {
+            @include inputEmail;
+
+            &:focus {
+                @include inputEmailFocus;
+            }
+        }
+
+        a {
+            @include textButton;
+
+            .startNow {
+                @include buttonStartNow;
+
+                &:hover {
+                    @include startNowHover;
+                }
+
+
+            }
+        }
+    }
+}
+
+.info-second {
+    &__captureService {
+        img {
+            @include infoSecondCapture;
+        }
+    }
+}
+
+.info-movies {
+    &__moviesSeriesCatalogue {
+        @include movieSeriesCatalogue;
+
+        img {
+            @include movieSeriesImg;
+        }
+    }
+}
+
+.info-share {
+    &__usersIcons {
+        @include infoShareIcons;
+
+        &--iconsDevices {
+            @include infoShareIconsDevices;
+
+            img {
+                @include devicesImg;
+            }
+        }
+    }
+}
+
+.info-more {
+    &__info {
+        a {
+            @include infoMoreButtonTitle;
+
+            .info-more__info--startNowBtn {
+                @include infoMoreStartNow;
+
+                &:hover {
+                    @include infoMoreStartNowHover;
+                }
+            }
+        }
+    }
+}
+
+.legal {
+    &__info {
+        &--logo {
+            @include legalLogo;
+            i {
+                @include legalLogoIcon;
+                img {
+                    @include legalLogoImg;
+                }
+            }
+        }
+    }
+}

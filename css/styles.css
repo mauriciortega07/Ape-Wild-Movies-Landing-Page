@@ -1,0 +1,270 @@
+body {
+  background-color: #000000;
+  color: #fff;
+}
+
+header .barlogo h1 {
+  transition: all 0.25s ease;
+}
+header .barlogo h1:hover {
+  scale: 108%;
+}
+
+.info-main {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.info-main__oferta {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  box-sizing: border-box;
+  gap: 3vw;
+  align-items: center;
+}
+.info-main__oferta--info {
+  font-size: 3vw;
+  font-weight: 800;
+  color: #fff499;
+}
+.info-main__oferta--desc {
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.info-second {
+  display: flex;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin: 4vw 0;
+  padding: 2vw;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.info-second__info {
+  margin: auto;
+}
+.info-second__info h2 {
+  font-size: 2vw;
+  font-weight: 500;
+  margin: 1vw 0;
+}
+.info-second__info p {
+  margin: 1vw 0;
+  font-size: 1.5vw;
+}
+
+.info-movies {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin: 4vw 0;
+  padding: 2vw;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  text-align: center;
+}
+.info-movies__moviesSeriesFree h2 {
+  font-size: 2vw;
+  font-weight: 500;
+  margin: 1vw 0;
+}
+.info-movies__moviesSeriesFree p {
+  margin: 1vw 0;
+  font-size: 1.5vw;
+}
+
+.info-share {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin-top: 4vw;
+  padding: 2vw;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  text-align: center;
+  height: 30vw;
+  background: linear-gradient(0deg, #ffffff, 75%, black);
+}
+.info-share__info--shareText {
+  font-size: 2vw;
+  font-weight: 500;
+  margin: 1vw 0;
+}
+.info-share__info p {
+  margin: 1vw 0;
+  font-size: 1.5vw;
+}
+.info-share__offer--priceText {
+  font-size: 2vw;
+  font-weight: 500;
+  margin: 1vw 0;
+  color: #000000;
+}
+
+.info-more {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 2vw;
+  background: linear-gradient(180deg, #ffffff, 75%, black);
+  box-sizing: border-box;
+  text-align: center;
+  height: 25vw;
+  color: #000;
+}
+.info-more__info--offer {
+  font-size: 3vw;
+  font-weight: 600;
+  margin: 1vw 0;
+}
+
+.legal {
+  padding: 2vw;
+}
+.legal__info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1vw;
+  color: #676767;
+}
+.legal__info--content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2vw;
+  padding: 1vw;
+  align-items: center;
+}
+
+header .barlogo {
+  display: flex;
+  padding: 1vw;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 3.5vw;
+  cursor: pointer;
+}
+header .barlogo .logo-rojo {
+  max-width: 5vw;
+  transition: all 0.25s ease;
+}
+header .barlogo .logo-rojo:hover {
+  scale: 108%;
+}
+
+.info-main__captureService {
+  text-align: center;
+  padding: 2vw 3vw;
+  box-sizing: border-box;
+}
+.info-main__captureService--capturaGral {
+  max-width: 50vw;
+}
+.info-main__buttons {
+  padding: 2vw;
+  text-align: center;
+}
+.info-main__buttons--putEmail {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  width: 22vw;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.15s ease;
+  height: 2vw;
+  text-align: center;
+  color: #252401;
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+.info-main__buttons--putEmail:focus {
+  outline: solid #ff5c04;
+}
+.info-main__buttons a {
+  text-decoration: none;
+}
+.info-main__buttons a .startNow {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  border-radius: 4.1vw;
+  width: 13vw;
+  height: 4vw;
+  margin-left: 2vw;
+  background-color: #ff5c04;
+  border: none;
+  color: #000000;
+  font-size: 1.1vw;
+  font-weight: 600;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+.info-main__buttons a .startNow:hover {
+  background-color: #fff;
+  color: #bb0c0c;
+  width: 15vw;
+}
+
+.info-second__captureService img {
+  width: 55vw;
+}
+
+.info-movies__moviesSeriesCatalogue {
+  margin: 3vw 0;
+}
+.info-movies__moviesSeriesCatalogue img {
+  width: 46vw;
+}
+
+.info-share__usersIcons {
+  display: flex;
+  justify-content: center;
+  height: 10vw;
+  align-items: center;
+  gap: 8vw;
+}
+.info-share__usersIcons--iconsDevices {
+  display: flex;
+}
+.info-share__usersIcons--iconsDevices img {
+  width: 3vw;
+}
+
+.info-more__info a {
+  text-decoration: none;
+}
+.info-more__info a .info-more__info--startNowBtn {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  border-radius: 4.1vw;
+  width: 15vw;
+  height: 5vw;
+  background-color: #ff0000;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin: 2vw 0;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+  color: #000;
+}
+.info-more__info a .info-more__info--startNowBtn:hover {
+  background-color: #000000;
+  color: #fff;
+  width: 18vw;
+}
+
+.legal__info--logo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2vw;
+  padding: 1vw;
+  align-items: center;
+}
+.legal__info--logo i {
+  display: inline-block;
+  width: 35%;
+  align-self: flex-end;
+}
+.legal__info--logo i img {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
