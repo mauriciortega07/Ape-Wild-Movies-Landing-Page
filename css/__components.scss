@@ -6,9 +6,9 @@ header {
             width: 8%;
 
             .logo-rojo {
-
-                @include logoRojo;
-
+                max-width: 100%;
+                transition: all .25s ease;
+            
                 &:hover {
                     scale: 108%;
                 }
@@ -23,8 +23,9 @@ header {
     &__captureService {
         @include infoMainCaptureService;
 
-        &--capturaGral {
-            @include infoMainCapturaGral;
+        img {
+            max-width: 70%;
+
 
             @media screen and (max-width: 700px) and (min-width: 200px) {
                 width: 100%;
@@ -33,7 +34,8 @@ header {
     }
 
     &__buttons {
-        @include infoMainButtons;
+        margin-top: 4rem;
+        text-align: center;
 
         @media screen and (max-width: 700px) and (min-width:200px) {
             display: flex;
@@ -44,7 +46,7 @@ header {
         }
 
 
-        &--putEmail {
+        input[type = "text"] {
             @include inputEmail;
 
             @media screen and (max-width: 700px) and (min-width:200px) {
@@ -54,15 +56,15 @@ header {
             }
 
             &:focus {
-                @include inputEmailFocus;
+                outline: solid #ff5c04;
             }
         }
 
         a {
-            @include textButton;
+            text-decoration: none;
 
             .startNow {
-                @include buttonStartNow;
+                @include buttonStartNow(9.63rem, 3.1rem, 4.8rem, 0rem, 2rem, .8rem, 1.2vw, 1rem, #ff5c04);
 
                 @media screen and (max-width: 700px) and (min-width: 200px) {
                     width: 7.63rem;
@@ -73,6 +75,11 @@ header {
 
                 &:hover {
                     @include startNowHover;
+
+                    @media screen and (max-width: 700px) and (min-width: 200px) {
+                        width: 13.63rem;
+
+                    }
                 }
 
 
@@ -86,7 +93,8 @@ header {
         margin: auto;
 
         img {
-            @include infoSecondCapture;
+            width: 55vw;
+
 
             @media screen and (max-width: 700px) and (min-width: 200px) {
                 width: 100%;
@@ -97,7 +105,8 @@ header {
 
 .info-movies {
     &__moviesSeriesCatalogue {
-        @include movieSeriesCatalogue;
+        margin: 3vw 0rem;
+
 
         @media screen and (max-width: 850px) and (min-width: 200px) {
             display: flex;
@@ -107,10 +116,12 @@ header {
         }
 
         img {
-            @include movieSeriesImg;
 
-            @media screen and (max-width:850px) and (min-width: 200px) {
-                width: 100%;
+            width: 46vw;
+
+
+            @media screen and (max-width:860px) and (min-width: 200px) {
+                width: 330px;
 
             }
         }
@@ -126,11 +137,12 @@ header {
             gap: 15%;
         }
 
-        &--iconsDevices {
-            @include infoShareIconsDevices;
+        div {
+            width: 8%;
+            display: flex;
 
             img {
-                @include devicesImg;
+                width: 60%;
 
                 @media screen and (max-width:800px) and (min-width:200px) {
                     width: 75%;
@@ -143,20 +155,23 @@ header {
 .info-more {
     &__info {
         a {
-            @include infoMoreButtonTitle;
+            text-decoration: none;
 
-            .info-more__info--startNowBtn {
-                @include infoMoreStartNow;
+            button {
+                
+                @include buttonStartNow(15rem, 5vw, 4.1rem, 2rem, 0rem, .6rem, 1.5vw, 1.5rem, #ff0000);
 
                 @media screen and (max-width: 700px) and (min-width: 200px) {
-                    width: 7.63rem;
+                    width: 9.63rem;
                     height: 2.1rem;
                     margin: 0;
 
                 }
 
                 &:hover {
-                    @include infoMoreStartNowHover;
+                    @include bodyStyles;
+                    width: 23%;
+
                 }
             }
         }
@@ -165,14 +180,16 @@ header {
 
 .legal {
     &__info {
-        &--logo {
+        div {
             @include legalLogo;
 
             i {
-                @include legalLogoIcon;
+                display: inline-block;
+                width: 35%;
 
-                img {
-                    @include legalLogoImg;
+                .logo-cafe {
+
+                    width: 100%;
                 }
             }
         }

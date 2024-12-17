@@ -11,9 +11,12 @@ header .barlogo h1:hover {
 }
 
 .info-main {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
   margin: 0rem 0rem;
   padding: 0rem;
+  text-align: center;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
 .info-main__oferta {
@@ -24,24 +27,27 @@ header .barlogo h1:hover {
   gap: 15px;
   align-items: center;
 }
-.info-main__oferta--info {
+.info-main__oferta h2 {
   font-size: clamp(1.8rem, 4vw, 4rem);
   font-weight: 800;
   color: #fff499;
-  text-align: center;
 }
-.info-main__oferta--desc {
-  font-size: clamp(0.9rem, 1vw, 3rem);
+.info-main__oferta p {
+  font-size: clamp(1rem, 1vw, 3rem);
   font-weight: 500;
-  text-align: center;
+}
+.info-main__oferta p label {
+  font-size: clamp(1rem, 1vw, 3rem);
+  font-weight: 500;
 }
 
 .info-second {
   display: flex;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  flex-direction: row;
   margin: 2rem 0rem;
   padding: 2rem;
-  justify-content: space-evenly;
+  text-align: left;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
 @media screen and (max-width: 700px) and (min-width: 200px) {
@@ -67,20 +73,19 @@ header .barlogo h1:hover {
   margin: 0.6rem 0rem;
 }
 .info-second__info p {
-  margin: 0.6rem 0rem;
-  font-weight: 400;
   font-size: clamp(0.9rem, 1vw, 2rem);
+  font-weight: 400;
+  margin: 0.6rem 0rem;
 }
 
 .info-movies {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
   margin: 2rem 0rem;
   padding: 2rem;
-  justify-content: space-evenly;
-  box-sizing: border-box;
   text-align: center;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 850px) and (min-width: 200px) {
   .info-movies {
@@ -96,55 +101,54 @@ header .barlogo h1:hover {
   margin: 0.6rem 0rem;
 }
 .info-movies__moviesSeriesFree p {
-  margin: 0.6rem 0rem;
-  font-weight: 400;
   font-size: clamp(0.9rem, 1vw, 2rem);
+  font-weight: 400;
+  margin: 0.6rem 0rem;
 }
 
 .info-share {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  margin: 0rem;
+  margin: 0rem 0rem;
   padding: 2.6rem;
-  justify-content: space-evenly;
-  box-sizing: border-box;
   text-align: center;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
   background: linear-gradient(0deg, #ffffff, 75%, black);
 }
-.info-share__info--shareText {
+.info-share__info h2 {
   font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 500;
   margin: 1rem 0rem;
 }
 .info-share__info p {
-  margin: 1rem 0rem;
-  font-weight: 400;
   font-size: clamp(0.9rem, 1vw, 2rem);
+  font-weight: 400;
+  margin: 1rem 0rem;
 }
-.info-share__offer--priceText {
+.info-share__offer h2 {
   font-size: clamp(1rem, 2vw, 2rem);
   font-weight: 500;
-  margin: 1vw 0;
+  margin: 1rem 0;
   color: #000000;
 }
 
 .info-more {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  margin: 0rem;
+  margin: 0rem 0rem;
   padding: 1.6rem;
-  background: linear-gradient(180deg, #ffffff, 75%, black);
-  box-sizing: border-box;
   text-align: center;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #ffffff, 75%, black);
   height: 22.4rem;
   color: #000;
 }
-.info-more__info--offer {
+.info-more__info h2 {
   font-size: clamp(2rem, 3vw, 4rem);
   font-weight: 600;
-  margin: 0.8rem 0;
+  margin: 0.8rem 0rem;
 }
 .info-more__info p {
   font-size: clamp(1rem, 2vw, 2rem);
@@ -158,13 +162,16 @@ header .barlogo h1:hover {
 }
 .legal__info {
   display: flex;
-  justify-content: space-between;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  flex-direction: row;
+  margin: 0rem 0rem;
+  padding: 0rem;
   text-align: center;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
   font-size: clamp(0.3rem, 0.7vw, 0.9rem);
   color: #b0b0b0;
 }
-.legal__info--content {
+.legal__info ul {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -200,11 +207,11 @@ header .barlogo i .logo-rojo:hover {
   padding: 0.4rem;
   box-sizing: border-box;
 }
-.info-main__captureService--capturaGral {
+.info-main__captureService img {
   max-width: 70%;
 }
 @media screen and (max-width: 700px) and (min-width: 200px) {
-  .info-main__captureService--capturaGral {
+  .info-main__captureService img {
     width: 100%;
   }
 }
@@ -221,7 +228,7 @@ header .barlogo i .logo-rojo:hover {
     margin-top: 2rem;
   }
 }
-.info-main__buttons--putEmail {
+.info-main__buttons input[type=text] {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   width: 25%;
   height: 1.5rem;
@@ -234,27 +241,27 @@ header .barlogo i .logo-rojo:hover {
   font-weight: 600;
 }
 @media screen and (max-width: 700px) and (min-width: 200px) {
-  .info-main__buttons--putEmail {
+  .info-main__buttons input[type=text] {
     width: 60%;
     border-radius: 0.8rem;
   }
 }
-.info-main__buttons--putEmail:focus {
+.info-main__buttons input[type=text]:focus {
   outline: solid #ff5c04;
 }
 .info-main__buttons a {
   text-decoration: none;
 }
 .info-main__buttons a .startNow {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  border-radius: 4.8rem;
   width: 9.63rem;
   height: 3.1rem;
-  margin-left: 2rem;
+  border-radius: 4.8rem;
+  margin: 0rem 2rem;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: #ff5c04;
   border: none;
   color: #000000;
-  font-size: clamp(0.8rem, 1.2vw, 1rem);
   font-weight: 600;
   transition: all 0.25s ease-in;
   cursor: pointer;
@@ -271,6 +278,11 @@ header .barlogo i .logo-rojo:hover {
   color: #bb0c0c;
   width: 11.63rem;
 }
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-main__buttons a .startNow:hover {
+    width: 13.63rem;
+  }
+}
 
 .info-second__captureService {
   margin: auto;
@@ -285,7 +297,7 @@ header .barlogo i .logo-rojo:hover {
 }
 
 .info-movies__moviesSeriesCatalogue {
-  margin: 3vw 0;
+  margin: 3vw 0rem;
 }
 @media screen and (max-width: 850px) and (min-width: 200px) {
   .info-movies__moviesSeriesCatalogue {
@@ -298,9 +310,9 @@ header .barlogo i .logo-rojo:hover {
 .info-movies__moviesSeriesCatalogue img {
   width: 46vw;
 }
-@media screen and (max-width: 850px) and (min-width: 200px) {
+@media screen and (max-width: 860px) and (min-width: 200px) {
   .info-movies__moviesSeriesCatalogue img {
-    width: 100%;
+    width: 330px;
   }
 }
 
@@ -318,15 +330,15 @@ header .barlogo i .logo-rojo:hover {
     gap: 15%;
   }
 }
-.info-share__usersIcons--iconsDevices {
+.info-share__usersIcons div {
   width: 8%;
   display: flex;
 }
-.info-share__usersIcons--iconsDevices img {
+.info-share__usersIcons div img {
   width: 60%;
 }
 @media screen and (max-width: 800px) and (min-width: 200px) {
-  .info-share__usersIcons--iconsDevices img {
+  .info-share__usersIcons div img {
     width: 75%;
   }
 }
@@ -334,34 +346,34 @@ header .barlogo i .logo-rojo:hover {
 .info-more__info a {
   text-decoration: none;
 }
-.info-more__info a .info-more__info--startNowBtn {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  border-radius: 4.1vw;
-  width: 15vw;
+.info-more__info a button {
+  width: 15rem;
   height: 5vw;
+  border-radius: 4.1rem;
+  margin: 2rem 0rem;
+  font-size: clamp(0.6rem, 1.5vw, 1.5rem);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: #ff0000;
   border: none;
-  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+  color: #000000;
   font-weight: 600;
-  margin: 2vw 0;
   transition: all 0.25s ease-in;
   cursor: pointer;
-  color: #000;
 }
 @media screen and (max-width: 700px) and (min-width: 200px) {
-  .info-more__info a .info-more__info--startNowBtn {
-    width: 7.63rem;
+  .info-more__info a button {
+    width: 9.63rem;
     height: 2.1rem;
     margin: 0;
   }
 }
-.info-more__info a .info-more__info--startNowBtn:hover {
+.info-more__info a button:hover {
   background-color: #000000;
   color: #fff;
-  width: 18vw;
+  width: 23%;
 }
 
-.legal__info--logo {
+.legal__info div {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -369,10 +381,10 @@ header .barlogo i .logo-rojo:hover {
   padding: 1rem;
   align-items: center;
 }
-.legal__info--logo i {
+.legal__info div i {
   display: inline-block;
   width: 35%;
 }
-.legal__info--logo i img {
+.legal__info div i .logo-cafe {
   width: 100%;
 }/*# sourceMappingURL=styles.css.map */

@@ -25,28 +25,12 @@
     align-items: center;
 }
 
-@mixin infoMainCapturaGral {
-    max-width: 70%;
+
+@mixin ofertaInfoDesc($minSize, $regularSize, $maxSize, $fWeight) {
+    font-size: clamp($minSize, $regularSize, $maxSize);
+    font-weight: $fWeight;
 }
 
-@mixin infoMainButtons {
-    margin-top: 4rem;
-    text-align: center;
-}
-
-
-@mixin ofertaInfo {
-    font-size: clamp(1.8rem, 4vw, 4rem);
-    font-weight: 800;
-    color: #fff499;
-    text-align: center;
-}
-
-@mixin ofertaDesc {
-    font-size: clamp(.9rem, 1vw, 3rem);
-    font-weight: 500;
-    text-align: center;
-}
 
 @mixin infoMainCaptureService {
     text-align: center;
@@ -54,127 +38,23 @@
     box-sizing: border-box;
 }
 
-@mixin logoRojo {
-    max-width: 100%;
-    transition: all .25s ease;
+@mixin titleAndInfo($minSize, $defaultSize, $maxSize, $fWeight, $mUpDown, $mLeftRide) {
+    font-size: clamp($minSize, $defaultSize, $maxSize);
+    font-weight: $fWeight;
+    margin: $mUpDown $mLeftRide;
 }
 
-@mixin transition25s {
-    transition: all .25s ease;
-}
 
-@mixin infoSecond {
+@mixin infoContainers($fxDirection, $mUpDown, $mLeftRide, $pGral, $txtAlign) {
     display: flex;
+    flex-direction: $fxDirection;
+    margin: $mUpDown $mLeftRide;
+    padding: $pGral;
+    text-align: $txtAlign;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    margin: 2rem 0rem;
-    padding: 2rem;
-    justify-content: space-evenly;
     box-sizing: border-box;
-
 }
 
-@mixin infoSecondInfo {
-    margin: auto;
-    padding: 2rem;
-}
-
-@mixin infoSecondTitle {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    font-weight: 500;
-    margin: .6rem 0rem;
-}
-
-@mixin infoSecondP {
-    margin: .6rem 0rem;
-    font-weight: 400;
-    font-size: clamp(.9rem, 1vw, 2rem);
-}
-
-@mixin infoMovies {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    margin: 2rem 0rem;
-    padding: 2rem;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-@mixin moviesSeriesFreeTitle {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    font-weight: 500;
-    margin: 0.6rem 0rem;
-}
-
-@mixin moviesSeriesFreeP {
-    margin: 0.6rem 0rem;
-    font-weight: 400;
-    font-size: clamp(.9rem, 1vw, 2rem);
-}
-
-@mixin infoShare {
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    margin: 0rem;
-    padding: 2.6rem;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    text-align: center;
-    background: linear-gradient(0deg, #ffffff, 75%, black);
-}
-
-@mixin infoShareText {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    font-weight: 500;
-    margin: 1rem 0rem;
-}
-
-@mixin infoShareP {
-    margin: 1rem 0rem;
-    font-weight: 400;
-    font-size: clamp(.9rem, 1vw, 2rem);
-}
-
-@mixin infoSharePriceText {
-    font-size: clamp(1rem, 2vw, 2rem);
-    font-weight: 500;
-    margin: 1vw 0;
-    color: #000000;
-}
-
-@mixin infoMore {
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    margin: 0rem;
-    padding: 1.6rem;
-    background: linear-gradient(180deg, #ffffff, 75%, black);
-    box-sizing: border-box;
-    text-align: center;
-    height: 22.4rem;
-    color: #000;
-}
-
-@mixin infoMoreOffer {
-    font-size: clamp(2rem, 3vw, 4rem);
-    font-weight: 600;
-    margin: .8rem 0;
-}
-
-@mixin legal {
-    padding: 2vw;
-}
-
-@mixin legalInfo {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: clamp(.3rem, .7vw, .9rem);
-    color: #b0b0b0;
-}
 
 @mixin legalInfoContent {
     display: flex;
@@ -198,25 +78,16 @@
     font-weight: 600;
 }
 
-@mixin inputEmailFocus {
-    outline: solid #ff5c04;
-
-}
-
-@mixin textButton {
-    text-decoration: none;
-}
-
-@mixin buttonStartNow {
+@mixin buttonStartNow($width, $height, $bRadius, $mUpDown, $mLeftRide, $minSize, $regularSize, $maxSize, $bgColor) {
+    width: $width;
+    height: $height;
+    border-radius: $bRadius;
+    margin: $mUpDown $mLeftRide;
+    font-size: clamp($minSize, $regularSize, $maxSize);
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    border-radius: 4.8rem;
-    width: 9.63rem;
-    height: 3.1rem;
-    margin-left: 2rem;
-    background-color: #ff5c04;
+    background-color: $bgColor;
     border: none;
     color: #000000;
-    font-size: clamp(.8rem, 1.2vw, 1rem);
     font-weight: 600;
     transition: all .25s ease-in;
     cursor: pointer;
@@ -228,18 +99,6 @@
     width: 11.63rem;
 }
 
-@mixin infoSecondCapture {
-    width: 55vw;
-}
-
-@mixin movieSeriesCatalogue {
-    margin: 3vw 0;
-}
-
-@mixin movieSeriesImg {
-    width: 46vw;
-}
-
 @mixin infoShareIcons {
     display: flex;
     justify-content: center;
@@ -249,41 +108,6 @@
     margin: 1rem 0rem;
 }
 
-@mixin infoShareIconsDevices {
-    width: 8%;
-    display: flex;
-}
-
-@mixin devicesImg {
-    width: 60%;
-}
-
-@mixin infoMoreButtonTitle {
-    text-decoration: none;
-
-}
-
-@mixin infoMoreStartNow {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    border-radius: 4.1vw;
-    width: 15vw;
-    height: 5vw;
-    background-color: #ff0000;
-    border: none;
-    font-size: clamp(.8rem, 1.5vw, 1.5rem);
-    font-weight: 600;
-    margin: 2vw 0;
-    transition: all .25s ease-in;
-    cursor: pointer;
-    color: #000;
-}
-
-@mixin infoMoreStartNowHover {
-    background-color: #000000;
-    color: #fff;
-    width: 18vw;
-}
-
 @mixin legalLogo {
     display: flex;
     flex-direction: column;
@@ -291,13 +115,4 @@
     gap: 1rem;
     padding: 1rem;
     align-items: center;
-}
-
-@mixin legalLogoIcon {
-    display: inline-block;
-    width: 35%;
-}
-
-@mixin legalLogoImg {
-    width: 100%;
 }
