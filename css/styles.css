@@ -312,7 +312,7 @@ header .barlogo i .logo-rojo:hover {
 }
 @media screen and (max-width: 860px) and (min-width: 200px) {
   .info-movies__moviesSeriesCatalogue img {
-    width: 330px;
+    width: 100%;
   }
 }
 
