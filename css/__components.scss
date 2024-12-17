@@ -2,14 +2,20 @@ header {
     .barlogo {
         @include barLogo;
 
-        .logo-rojo {
+        i {
+            width: 8%;
 
-            @include logoRojo;
+            .logo-rojo {
 
-            &:hover {
-                @include barLogoHover;
+                @include logoRojo;
+
+                &:hover {
+                    scale: 108%;
+                }
             }
         }
+
+
     }
 }
 
@@ -19,14 +25,33 @@ header {
 
         &--capturaGral {
             @include infoMainCapturaGral;
+
+            @media screen and (max-width: 700px) and (min-width: 200px) {
+                width: 100%;
+            }
         }
     }
 
     &__buttons {
         @include infoMainButtons;
 
+        @media screen and (max-width: 700px) and (min-width:200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 2rem;
+        }
+
+
         &--putEmail {
             @include inputEmail;
+
+            @media screen and (max-width: 700px) and (min-width:200px) {
+                width: 60%;
+                border-radius: .8rem;
+
+            }
 
             &:focus {
                 @include inputEmailFocus;
@@ -38,6 +63,13 @@ header {
 
             .startNow {
                 @include buttonStartNow;
+
+                @media screen and (max-width: 700px) and (min-width: 200px) {
+                    width: 7.63rem;
+                    height: 2.1rem;
+                    margin: 0;
+
+                }
 
                 &:hover {
                     @include startNowHover;
@@ -51,8 +83,14 @@ header {
 
 .info-second {
     &__captureService {
+        margin: auto;
+
         img {
             @include infoSecondCapture;
+
+            @media screen and (max-width: 700px) and (min-width: 200px) {
+                width: 100%;
+            }
         }
     }
 }
@@ -61,8 +99,20 @@ header {
     &__moviesSeriesCatalogue {
         @include movieSeriesCatalogue;
 
+        @media screen and (max-width: 850px) and (min-width: 200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+        }
+
         img {
             @include movieSeriesImg;
+
+            @media screen and (max-width:850px) and (min-width: 200px) {
+                width: 100%;
+
+            }
         }
     }
 }
@@ -71,11 +121,20 @@ header {
     &__usersIcons {
         @include infoShareIcons;
 
+        @media screen and (max-width:800px) and (min-width:200px) {
+            height: 5rem;
+            gap: 15%;
+        }
+
         &--iconsDevices {
             @include infoShareIconsDevices;
 
             img {
                 @include devicesImg;
+
+                @media screen and (max-width:800px) and (min-width:200px) {
+                    width: 75%;
+                }
             }
         }
     }
@@ -89,6 +148,13 @@ header {
             .info-more__info--startNowBtn {
                 @include infoMoreStartNow;
 
+                @media screen and (max-width: 700px) and (min-width: 200px) {
+                    width: 7.63rem;
+                    height: 2.1rem;
+                    margin: 0;
+
+                }
+
                 &:hover {
                     @include infoMoreStartNowHover;
                 }
@@ -101,8 +167,10 @@ header {
     &__info {
         &--logo {
             @include legalLogo;
+
             i {
                 @include legalLogoIcon;
+
                 img {
                     @include legalLogoImg;
                 }

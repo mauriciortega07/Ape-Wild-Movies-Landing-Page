@@ -12,107 +12,145 @@ header .barlogo h1:hover {
 
 .info-main {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin: 0rem 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
 }
 .info-main__oferta {
   display: flex;
   flex-direction: column;
-  padding: 3vw;
+  padding: 8px;
   box-sizing: border-box;
-  gap: 3vw;
+  gap: 15px;
   align-items: center;
 }
 .info-main__oferta--info {
-  font-size: 3vw;
+  font-size: clamp(1.8rem, 4vw, 4rem);
   font-weight: 800;
   color: #fff499;
+  text-align: center;
 }
 .info-main__oferta--desc {
-  font-size: 2vw;
+  font-size: clamp(0.9rem, 1vw, 3rem);
   font-weight: 500;
+  text-align: center;
 }
 
 .info-second {
   display: flex;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  margin: 4vw 0;
-  padding: 2vw;
+  margin: 2rem 0rem;
+  padding: 2rem;
   justify-content: space-evenly;
   box-sizing: border-box;
 }
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-second {
+    flex-direction: column;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
 .info-second__info {
   margin: auto;
+  padding: 2rem;
+}
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-second__info {
+    text-align: center;
+  }
 }
 .info-second__info h2 {
-  font-size: 2vw;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 500;
-  margin: 1vw 0;
+  margin: 0.6rem 0rem;
 }
 .info-second__info p {
-  margin: 1vw 0;
-  font-size: 1.5vw;
+  margin: 0.6rem 0rem;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw, 2rem);
 }
 
 .info-movies {
   display: flex;
   flex-direction: column;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  margin: 4vw 0;
-  padding: 2vw;
+  margin: 2rem 0rem;
+  padding: 2rem;
   justify-content: space-evenly;
   box-sizing: border-box;
   text-align: center;
 }
+@media screen and (max-width: 850px) and (min-width: 200px) {
+  .info-movies {
+    margin: 1rem 0rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+  }
+}
 .info-movies__moviesSeriesFree h2 {
-  font-size: 2vw;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 500;
-  margin: 1vw 0;
+  margin: 0.6rem 0rem;
 }
 .info-movies__moviesSeriesFree p {
-  margin: 1vw 0;
-  font-size: 1.5vw;
+  margin: 0.6rem 0rem;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw, 2rem);
 }
 
 .info-share {
   display: flex;
   flex-direction: column;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  margin-top: 4vw;
-  padding: 2vw;
+  margin: 0rem;
+  padding: 2.6rem;
   justify-content: space-evenly;
   box-sizing: border-box;
   text-align: center;
-  height: 30vw;
   background: linear-gradient(0deg, #ffffff, 75%, black);
 }
 .info-share__info--shareText {
-  font-size: 2vw;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 500;
-  margin: 1vw 0;
+  margin: 1rem 0rem;
 }
 .info-share__info p {
-  margin: 1vw 0;
-  font-size: 1.5vw;
+  margin: 1rem 0rem;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1vw, 2rem);
 }
 .info-share__offer--priceText {
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-weight: 500;
   margin: 1vw 0;
   color: #000000;
 }
 
 .info-more {
+  display: flex;
+  flex-direction: column;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  padding: 2vw;
+  margin: 0rem;
+  padding: 1.6rem;
   background: linear-gradient(180deg, #ffffff, 75%, black);
   box-sizing: border-box;
   text-align: center;
-  height: 25vw;
+  height: 22.4rem;
   color: #000;
 }
 .info-more__info--offer {
-  font-size: 3vw;
+  font-size: clamp(2rem, 3vw, 4rem);
   font-weight: 600;
-  margin: 1vw 0;
+  margin: 0.8rem 0;
+}
+.info-more__info p {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 500;
+  margin: 2rem 0;
+  color: #000000;
 }
 
 .legal {
@@ -123,60 +161,83 @@ header .barlogo h1:hover {
   justify-content: space-between;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   text-align: center;
-  font-size: 1vw;
-  color: #676767;
+  font-size: clamp(0.3rem, 0.7vw, 0.9rem);
+  color: #b0b0b0;
 }
 .legal__info--content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 2vw;
-  padding: 1vw;
+  gap: 1rem;
+  padding: 1rem;
   align-items: center;
 }
 
 header .barlogo {
   display: flex;
-  padding: 1vw;
+  padding: 1rem;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   gap: 10px;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-  font-size: 3.5vw;
+  font-size: clamp(1rem, 5vw, 4rem);
   cursor: pointer;
 }
-header .barlogo .logo-rojo {
-  max-width: 5vw;
+header .barlogo i {
+  width: 8%;
+}
+header .barlogo i .logo-rojo {
+  max-width: 100%;
   transition: all 0.25s ease;
 }
-header .barlogo .logo-rojo:hover {
+header .barlogo i .logo-rojo:hover {
   scale: 108%;
 }
 
 .info-main__captureService {
   text-align: center;
-  padding: 2vw 3vw;
+  padding: 0.4rem;
   box-sizing: border-box;
 }
 .info-main__captureService--capturaGral {
-  max-width: 50vw;
+  max-width: 70%;
+}
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-main__captureService--capturaGral {
+    width: 100%;
+  }
 }
 .info-main__buttons {
-  padding: 2vw;
+  margin-top: 4rem;
   text-align: center;
+}
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-main__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2rem;
+  }
 }
 .info-main__buttons--putEmail {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  width: 22vw;
+  width: 25%;
+  height: 1.5rem;
   border: none;
   border-radius: 5px;
   transition: all 0.15s ease;
-  height: 2vw;
   text-align: center;
   color: #252401;
-  font-size: 1.1vw;
+  font-size: clamp(0.5rem, 1vw, 2rem);
   font-weight: 600;
+}
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-main__buttons--putEmail {
+    width: 60%;
+    border-radius: 0.8rem;
+  }
 }
 .info-main__buttons--putEmail:focus {
   outline: solid #ff5c04;
@@ -186,47 +247,88 @@ header .barlogo .logo-rojo:hover {
 }
 .info-main__buttons a .startNow {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  border-radius: 4.1vw;
-  width: 13vw;
-  height: 4vw;
-  margin-left: 2vw;
+  border-radius: 4.8rem;
+  width: 9.63rem;
+  height: 3.1rem;
+  margin-left: 2rem;
   background-color: #ff5c04;
   border: none;
   color: #000000;
-  font-size: 1.1vw;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   font-weight: 600;
   transition: all 0.25s ease-in;
   cursor: pointer;
 }
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-main__buttons a .startNow {
+    width: 7.63rem;
+    height: 2.1rem;
+    margin: 0;
+  }
+}
 .info-main__buttons a .startNow:hover {
   background-color: #fff;
   color: #bb0c0c;
-  width: 15vw;
+  width: 11.63rem;
 }
 
+.info-second__captureService {
+  margin: auto;
+}
 .info-second__captureService img {
   width: 55vw;
+}
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-second__captureService img {
+    width: 100%;
+  }
 }
 
 .info-movies__moviesSeriesCatalogue {
   margin: 3vw 0;
 }
+@media screen and (max-width: 850px) and (min-width: 200px) {
+  .info-movies__moviesSeriesCatalogue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+}
 .info-movies__moviesSeriesCatalogue img {
   width: 46vw;
+}
+@media screen and (max-width: 850px) and (min-width: 200px) {
+  .info-movies__moviesSeriesCatalogue img {
+    width: 100%;
+  }
 }
 
 .info-share__usersIcons {
   display: flex;
   justify-content: center;
-  height: 10vw;
+  height: 6.188rem;
   align-items: center;
-  gap: 8vw;
+  gap: 4rem;
+  margin: 1rem 0rem;
+}
+@media screen and (max-width: 800px) and (min-width: 200px) {
+  .info-share__usersIcons {
+    height: 5rem;
+    gap: 15%;
+  }
 }
 .info-share__usersIcons--iconsDevices {
+  width: 8%;
   display: flex;
 }
 .info-share__usersIcons--iconsDevices img {
-  width: 3vw;
+  width: 60%;
+}
+@media screen and (max-width: 800px) and (min-width: 200px) {
+  .info-share__usersIcons--iconsDevices img {
+    width: 75%;
+  }
 }
 
 .info-more__info a {
@@ -239,12 +341,19 @@ header .barlogo .logo-rojo:hover {
   height: 5vw;
   background-color: #ff0000;
   border: none;
-  font-size: 1.5vw;
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
   font-weight: 600;
   margin: 2vw 0;
   transition: all 0.25s ease-in;
   cursor: pointer;
   color: #000;
+}
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .info-more__info a .info-more__info--startNowBtn {
+    width: 7.63rem;
+    height: 2.1rem;
+    margin: 0;
+  }
 }
 .info-more__info a .info-more__info--startNowBtn:hover {
   background-color: #000000;
@@ -256,14 +365,13 @@ header .barlogo .logo-rojo:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 2vw;
-  padding: 1vw;
+  gap: 1rem;
+  padding: 1rem;
   align-items: center;
 }
 .legal__info--logo i {
   display: inline-block;
   width: 35%;
-  align-self: flex-end;
 }
 .legal__info--logo i img {
   width: 100%;
